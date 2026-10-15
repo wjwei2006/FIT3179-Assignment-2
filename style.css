@@ -1,0 +1,143 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f7f9f7;color:#173642;font:16px/1.65 "DM Sans",system-ui,sans-serif}a{color:#086f75;text-decoration:none}a:hover{text-decoration:underline}.topbar{position:sticky;top:0;z-index:99;padding:15px max(22px,calc((100vw - 1160px)/2));background:#f7f9f7ee;backdrop-filter:blur(13px);border-bottom:1px solid #e2ebeb;display:flex;justify-content:space-between;align-items:center;gap:20px}.topbar a{color:#173642}.brand{font-size:13px;font-weight:600;letter-spacing:2.5px;white-space:nowrap}.brand b{color:#0b7777}.brand span{color:#768990;font-size:10px}.topbar nav{display:flex;gap:25px}.topbar nav a{font-size:13px;font-weight:700}.hero{background:#0f3440;color:white;overflow:hidden}.hero-inner{max-width:1160px;margin:auto;padding:105px 24px 88px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);min-height:520px;align-items:center}.kicker,.eyebrow{letter-spacing:2.6px;font-weight:700;font-size:11px;color:#34a99e}.kicker{color:#a5d5ce}.hero h1{font:normal clamp(64px,8vw,124px)/.94 "DM Serif Display",Georgia,serif;letter-spacing:-2px;margin:18px 0 20px}.hero h1 em{font-weight:400;color:#e7b58e}.hero-type p{max-width:550px;color:#d5e3e4;font-size:18px;line-height:1.7}.hero-button{display:inline-flex;align-items:center;gap:20px;color:#122f38;background:#e8bd99;font-weight:700;font-size:11px;letter-spacing:1.4px;padding:15px 18px;margin-top:15px}.hero-button:hover{text-decoration:none;background:#f3d0b1}.hero-art{height:410px;position:relative}.halo{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);border:1px solid #aad9d733;border-radius:50%}.h1{width:370px;height:370px}.h2{width:290px;height:290px}.h3{width:205px;height:205px;background:linear-gradient(140deg,#2a6a70aa,#16495455);border:1px solid #b1e0dd70}.hero-sign{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:45px "DM Serif Display",serif;letter-spacing:7px;white-space:nowrap}.hero-sign span{font:30px "DM Sans",sans-serif;color:#e4b38b}.hero-small{position:absolute;bottom:7%;right:6%;font-size:10px;letter-spacing:4px;line-height:2.3;color:#b7d5d2;text-align:right}.metrics{border-top:1px solid #ffffff25;background:#123b46;padding:28px max(24px,calc((100vw - 1160px)/2));display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.metrics div{display:flex;flex-direction:column;border-right:1px solid #ffffff22;padding-right:14px;gap:8px}.metrics strong{font:40px "DM Serif Display",serif;color:#eec5a3;line-height:1}.metrics strong span{font-size:25px}.metrics div>span{color:#c7d9dc;font-size:12px;max-width:175px}main{max-width:1160px;margin:auto;padding:0 24px}.lead{padding:100px 0 65px}.lead h2,.last-word h2{font:normal clamp(39px,5.2vw,69px)/1.13 "DM Serif Display",serif;margin:22px 0}.lead h2 em,.last-word h2 em{color:#0b7777;font-weight:400}.lead-text{display:grid;grid-template-columns:1fr 1fr;gap:50px;max-width:1050px;color:#526973}.lead-text p{font-size:17px;line-height:1.75}.ethic-note{border-left:4px solid #d8a87e;padding-left:22px}.story-section{padding:38px 0 60px;border-top:1px solid #d8e2e5}.chapter-heading{display:grid;grid-template-columns:100px 1fr;gap:12px;align-items:start}.chapter-index{font-weight:700;font-size:12px;color:#9aabaf;padding-top:7px}.chapter-heading h2{font:normal clamp(33px,4vw,54px) "DM Serif Display",serif;margin:5px 0 8px}.chapter-heading p{font-size:17px;margin:0;color:#5b6e77}.chapter-prose{max-width:910px;font-size:17px;margin:23px 0 30px;padding:17px 28px;border-left:3px solid #0b7777;background:#e9f1ef;color:#254952}.chapter-prose p{margin:0}.chart-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.chart-card{background:#fff;border:1px solid #e2e9e9;border-radius:14px;padding:28px;box-shadow:0 8px 25px #203b4510;min-width:0}.chart-card:nth-child(3n+1){grid-column:1/-1}.card-top{display:flex;gap:10px;justify-content:space-between;align-items:center}.chart-count{font-weight:800;font-size:11px;color:#0b7777;letter-spacing:1.4px}.idiom{font-size:11px;color:#7c8e95;text-align:right}.chart-card h3{font:normal 30px/1.2 "DM Serif Display",serif;margin:12px 0}.chart-intro{font-size:14px;color:#647982;min-height:43px}.viz{min-height:260px;width:100%;display:flex;align-items:center;justify-content:center;margin:25px 0 10px;overflow:hidden}.viz .vega-embed{width:100%}.viz svg{max-width:100%;height:auto}.loading{color:#738b91;text-align:center;font-size:13px}.chart-note,.chart-caveat{margin:10px 0 0;border-top:1px solid #ecf1f1;padding-top:10px;color:#607681;font-size:12px;line-height:1.5}.chart-caveat{border:0;margin-top:2px;padding-top:0}.chart-caveat strong{color:#a46c45}.last-word{background:#153e49;color:white;margin:65px -24px;padding:65px clamp(25px,5vw,75px)}.last-word h2 em{color:#eec4a3}.last-word p{font-size:17px;max-width:780px;color:#d2e2e4}.last-word a{color:#eec4a3;font-weight:700}.sources{padding:60px 0 100px}.sources h2{font:normal 42px "DM Serif Display",serif;margin:18px 0 35px}.source-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}.source-list>div{padding:18px 0;border-top:2px solid #c6dcda}.source-list h3{font-size:14px}.source-list p{font-size:13px;color:#556d75;line-height:1.7}.source-list a{font-size:12px;font-weight:700}.method{font-size:13px;color:#5a7178;line-height:1.8;margin:28px 0 0}.editme{color:#b2523a;font-weight:700}footer{background:#0f3440;color:#c9dbdc;padding:30px max(24px,calc((100vw - 1160px)/2));display:flex;justify-content:space-between;gap:16px;font-size:12px;letter-spacing:1px}footer a{color:#e8bd99}@media(max-width:900px){.chart-grid{grid-template-columns:1fr}.chart-card:nth-child(n){grid-column:auto}.hero-inner{grid-template-columns:1fr}.hero-art{display:none}.metrics{grid-template-columns:repeat(2,1fr)}.source-list{grid-template-columns:1fr}.lead-text{grid-template-columns:1fr;gap:5px}}@media(max-width:650px){.topbar{padding:14px 17px}.topbar nav{gap:12px}.topbar nav a{font-size:11px}.brand{font-size:11px;letter-spacing:1px}.brand span{display:none}.hero-inner{padding:70px 20px}.hero h1{font-size:64px}.metrics{padding:24px 20px}.metrics strong{font-size:31px}.metrics div>span{font-size:11px}main{padding:0 16px}.lead{padding:60px 0}.lead-text p{font-size:15px}.chapter-heading{grid-template-columns:1fr}.chapter-index{display:none}.chart-card{padding:18px 14px}.chart-card h3{font-size:26px}.chart-intro{min-height:0}.viz{min-height:220px}.last-word{margin:50px -16px;padding:40px 25px}.sources{padding-bottom:55px}}
+
+
+/* ================================================================
+   V5 editorial layout: no orphan half-width charts and wider canvas.
+   The chart data and the V4 working geographic projection are unchanged.
+   ================================================================ */
+:root { --reading-width: 1480px; --page-edge: clamp(20px, 3.2vw, 54px); }
+body { background:#f4f7f6; }
+.topbar {
+  padding-left:max(var(--page-edge),calc((100vw - var(--reading-width))/2));
+  padding-right:max(var(--page-edge),calc((100vw - var(--reading-width))/2));
+}
+.hero-inner {
+  max-width:var(--reading-width);
+  padding-left:var(--page-edge);
+  padding-right:var(--page-edge);
+}
+.metrics {
+  padding-left:max(var(--page-edge),calc((100vw - var(--reading-width))/2));
+  padding-right:max(var(--page-edge),calc((100vw - var(--reading-width))/2));
+}
+main { max-width:var(--reading-width); padding:0 var(--page-edge); }
+.hero h1 { font-size:clamp(72px,7.5vw,126px); }
+.story-section { padding-top:46px;padding-bottom:74px; }
+.chapter-heading { grid-template-columns:98px minmax(0,1fr); }
+.chapter-prose {max-width:1050px;}
+.chart-grid {
+  display:grid;
+  grid-template-columns:repeat(12,minmax(0,1fr));
+  gap:clamp(18px,2vw,28px);
+  align-items:stretch;
+}
+/* Override the original nth-child(3n+1) rule: it caused orphaned left-only cards. */
+.chart-grid > .chart-card { grid-column:span 6; }
+.chart-grid > .chart-card.chart-card--featured { grid-column:1/-1; }
+.chart-card {
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+  padding:clamp(23px,2.5vw,39px);
+  border-radius:20px;
+  border:1px solid #dfebea;
+  box-shadow:0 15px 40px rgba(23,54,66,.055);
+  background:#fff;
+}
+.chart-card--featured { background:linear-gradient(135deg,#fff 20%,#fbfdfc 100%); }
+.chart-card h3 { font-size:clamp(27px,2.7vw,37px);max-width:800px; }
+.card-top { flex-wrap:wrap; }
+.chart-intro { min-height:0; max-width:860px; margin:3px 0 12px;line-height:1.65; }
+.chart-card .viz {
+  flex:1 1 auto;
+  width:100%;
+  min-width:0;
+  min-height:285px;
+  margin:17px 0 22px;
+  overflow:visible;
+}
+.chart-card .viz .vega-embed {width:100%; max-width:100%;}
+.chart-card .viz svg { display:block;max-width:100%;height:auto; }
+.chart-card .chart-note { margin-top:auto; }
+.chart-grid--3 > .chart-card--featured .viz { min-height:330px; }
+/* Maps get a taller plotting area so the full continent has room to fit. */
+#chart-4 {min-height:510px;}
+#chart-5 {min-height:410px;}
+#chart-6 {min-height:410px;}
+/* Keep interpretation beside rather than beneath a geographically constrained map. */
+.feature-layout {
+  display:grid;
+  grid-template-columns:minmax(0,1.7fr) minmax(245px,.7fr);
+  align-items:center;
+  gap:clamp(18px,2.2vw,40px);
+  min-width:0;
+  margin:6px 0 20px;
+}
+.feature-layout > .viz {min-width:0;margin:8px 0;}
+.story-insight {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:13px;
+  background:#ecf4f2;
+  color:#21464c;
+  padding:clamp(23px,2.2vw,32px);
+  border-radius:16px;
+  border:1px solid #d5e6e2;
+  min-width:0;
+}
+.insight-kicker {font-size:11px;color:#0b7777;font-weight:800;letter-spacing:1.7px;}
+.story-insight h4 {font:normal clamp(22px,2.25vw,29px)/1.24 'DM Serif Display',Georgia,serif;margin:0;}
+.story-insight p {font-size:13px;line-height:1.65;margin:0;color:#48636a;}
+.story-insight p b {color:#21464c;}
+.story-insight .insight-footnote {font-size:11px;color:#6f848a;border-top:1px solid #cddfdd;padding-top:13px;}
+.mini-stat {display:flex;gap:16px;align-items:center;width:100%;padding:15px 0;border-bottom:1px solid #cfdfdd;}
+.mini-stat strong {font:normal 42px/1 'DM Serif Display',Georgia,serif;color:#0b7777;min-width:91px;}
+.mini-stat strong span {font-size:23px;}
+.mini-stat b {display:block;font-size:13px;line-height:1.3;}
+.mini-stat small {display:block;font-size:11px;color:#687f85;line-height:1.5;}
+/* Make the conclusion a deliberate feature rather than a single half-empty plot. */
+.feature-layout--waffle {grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);}
+.feature-layout--waffle > .viz {max-width:440px;min-height:360px;margin:0 auto;}
+.story-insight--waffle {background:#153e49;color:#fff;border:0;}
+.story-insight--waffle .insight-kicker {color:#9ddbd3;}
+.story-insight--waffle h4 {color:white;}
+.story-insight--waffle p {color:#d0e2e2;}
+.story-insight--waffle .insight-footnote {border-top-color:#41636a;color:#bdd2d5;}
+.giant-number {font:normal clamp(60px,6vw,88px)/.98 'DM Serif Display',Georgia,serif;color:#edc29d;}
+.giant-number span {font-size:.48em;}
+.waffle-key {display:flex;gap:10px;flex-wrap:wrap;align-items:center;font-size:12px;color:#d0e2e2;}
+.key-swatch {width:14px;height:14px;border-radius:3px;background:#0b7777;display:inline-block;border:1px solid #cce5e0;}
+.key-swatch--empty {background:#dce6e7;}
+/* Make notes a consistent low-contrast strip rather than leaving ragged bottoms. */
+.chart-note { padding-top:15px;margin-top:auto; }
+.chart-caveat { margin-top:5px; }
+@media(max-width:1080px) {
+  .feature-layout--map {grid-template-columns:minmax(0,1fr);}
+  .feature-layout--map .story-insight {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 24px;}
+  .feature-layout--map .story-insight > .insight-kicker,
+  .feature-layout--map .story-insight > h4,
+  .feature-layout--map .story-insight > p {grid-column:1/-1;}
+}
+@media(max-width:900px) {
+  .chart-grid {grid-template-columns:repeat(12,minmax(0,1fr));}
+  .chart-grid > .chart-card,
+  .chart-grid > .chart-card.chart-card--featured {grid-column:1/-1;}
+  .feature-layout--waffle {grid-template-columns:minmax(0,1fr) minmax(240px,.9fr);}
+}
+@media(max-width:690px) {
+  :root {--page-edge:16px;}
+  .hero h1 {font-size:clamp(56px,13vw,80px);}
+  .chart-grid {gap:16px;}
+  .chart-card {padding:24px 18px;border-radius:16px;}
+  .chart-card h3 {font-size:27px;}
+  .chart-card .viz {min-height:225px;overflow:hidden;}
+  .feature-layout--map,
+  .feature-layout--waffle {grid-template-columns:minmax(0,1fr);}
+  .feature-layout--map .story-insight {display:flex;}
+  .feature-layout--waffle > .viz {max-width:340px;min-height:315px;}
+  .story-insight {padding:24px;}
+  #chart-4 {min-height:330px;}
+  #chart-5, #chart-6 {min-height:310px;}
+}
+
