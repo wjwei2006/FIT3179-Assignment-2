@@ -1,0 +1,142 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": null,
+  "config": {
+    "font": "Inter",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#526673",
+      "titleColor": "#526673",
+      "domainColor": "#D8E3E6",
+      "tickColor": "#D8E3E6",
+      "gridColor": "#E8EFF0",
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "legend": {
+      "labelColor": "#415761",
+      "titleColor": "#415761",
+      "labelFontSize": 11
+    },
+    "title": {
+      "color": "#112F3C",
+      "fontSize": 15
+    },
+    "range": {
+      "category": [
+        "#0B7777",
+        "#E3A35D",
+        "#44648B",
+        "#9D78A1",
+        "#5A9C79",
+        "#D77974",
+        "#8D8C64",
+        "#65A5B5"
+      ]
+    }
+  },
+  "data": {
+    "url": "data/state_changes_2024_2025.csv"
+  },
+  "width": "container",
+  "height": 320,
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#9BB4BC",
+        "strokeWidth": 3
+      },
+      "encoding": {
+        "y": {
+          "field": "code",
+          "type": "nominal",
+          "sort": "-x",
+          "axis": {
+            "title": null
+          }
+        },
+        "x": {
+          "field": "year2024",
+          "type": "quantitative",
+          "axis": {
+            "title": "New registrations"
+          }
+        },
+        "x2": {
+          "field": "year2025"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 95,
+        "color": "#688397"
+      },
+      "encoding": {
+        "y": {
+          "field": "code",
+          "type": "nominal",
+          "sort": "-x"
+        },
+        "x": {
+          "field": "year2024",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State / territory"
+          },
+          {
+            "field": "year2024",
+            "type": "quantitative",
+            "title": "2024",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "size": 105,
+        "color": "#0B7777"
+      },
+      "encoding": {
+        "y": {
+          "field": "code",
+          "type": "nominal",
+          "sort": "-x"
+        },
+        "x": {
+          "field": "year2025",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State / territory"
+          },
+          {
+            "field": "year2025",
+            "type": "quantitative",
+            "title": "2025",
+            "format": ","
+          },
+          {
+            "field": "change_pct",
+            "title": "Change (%)"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+state,code,registration_rate_16plus,new_registrations,deceased_donors,transplant_recipients,family_consent_rate,longitude,latitude,tile_x,tile_y
+New South Wales,NSW,40,34156,160,411,50,146.9,-32.5,3,2
+Victoria,VIC,23,29437,156,357,50,144.4,-37.3,3,3
+Queensland,QLD,30,31271,102,292,58,145,-22.5,3,1
+South Australia,SA,74,28794,35,91,54,135.5,-30.0,1,2
+Western Australia,WA,35,17564,61,165,54,122.2,-25.6,0,2
+Tasmania,TAS,49,2862,25,62,76,146.9,-42.1,4,4
+Northern Territory,NT,15,843,5,18,59,133.7,-19.5,1,1
+Australian Capital Territory,ACT,27,3042,13,42,59,149.12,-35.28,4,2

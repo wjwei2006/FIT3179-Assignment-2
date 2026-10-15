@@ -1,0 +1,57 @@
+state,code,age,count,share_pct
+New South Wales,NSW,16–17,547,0.054
+New South Wales,NSW,18–24,27861,2.772
+New South Wales,NSW,25–34,134443,13.377
+New South Wales,NSW,35–44,192518,19.155
+New South Wales,NSW,45–54,191432,19.047
+New South Wales,NSW,55–64,181918,18.1
+New South Wales,NSW,65+,276326,27.494
+Victoria,VIC,16–17,491,0.056
+Victoria,VIC,18–24,25210,2.871
+Victoria,VIC,25–34,126353,14.388
+Victoria,VIC,35–44,196500,22.375
+Victoria,VIC,45–54,172133,19.601
+Victoria,VIC,55–64,145565,16.575
+Victoria,VIC,65+,211945,24.134
+Queensland,QLD,16–17,582,0.075
+Queensland,QLD,18–24,21823,2.812
+Queensland,QLD,25–34,104001,13.4
+Queensland,QLD,35–44,157375,20.277
+Queensland,QLD,45–54,152438,19.641
+Queensland,QLD,55–64,138550,17.852
+Queensland,QLD,65+,201352,25.943
+South Australia,SA,16–17,4241,1.214
+South Australia,SA,18–24,10598,3.034
+South Australia,SA,25–34,52062,14.906
+South Australia,SA,35–44,66358,18.999
+South Australia,SA,45–54,57087,16.345
+South Australia,SA,55–64,57592,16.489
+South Australia,SA,65+,101331,29.012
+Western Australia,WA,16–17,282,0.064
+Western Australia,WA,18–24,9865,2.238
+Western Australia,WA,25–34,50680,11.495
+Western Australia,WA,35–44,96794,21.955
+Western Australia,WA,45–54,88319,20.033
+Western Australia,WA,55–64,79815,18.104
+Western Australia,WA,65+,115122,26.112
+Tasmania,TAS,16–17,58,0.059
+Tasmania,TAS,18–24,2454,2.498
+Tasmania,TAS,25–34,11782,11.993
+Tasmania,TAS,35–44,18929,19.268
+Tasmania,TAS,45–54,18030,18.352
+Tasmania,TAS,55–64,18142,18.466
+Tasmania,TAS,65+,28848,29.364
+Northern Territory,NT,16–17,25,0.109
+Northern Territory,NT,18–24,624,2.73
+Northern Territory,NT,25–34,3739,16.359
+Northern Territory,NT,35–44,5794,25.35
+Northern Territory,NT,45–54,4825,21.11
+Northern Territory,NT,55–64,4021,17.593
+Northern Territory,NT,65+,3828,16.748
+Australian Capital Territory,ACT,16–17,96,0.12
+Australian Capital Territory,ACT,18–24,2785,3.486
+Australian Capital Territory,ACT,25–34,13066,16.357
+Australian Capital Territory,ACT,35–44,19119,23.934
+Australian Capital Territory,ACT,45–54,16291,20.394
+Australian Capital Territory,ACT,55–64,12290,15.385
+Australian Capital Territory,ACT,65+,16235,20.324

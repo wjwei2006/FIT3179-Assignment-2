@@ -1,0 +1,113 @@
+state,code,gender,age,registered_records,signed_records
+New South Wales,NSW,Female,16–17,400,-400
+New South Wales,NSW,Female,18–24,21210,-21210
+New South Wales,NSW,Female,25–34,94032,-94032
+New South Wales,NSW,Female,35–44,127490,-127490
+New South Wales,NSW,Female,45–54,122302,-122302
+New South Wales,NSW,Female,55–64,109059,-109059
+New South Wales,NSW,Female,65+,155015,-155015
+New South Wales,NSW,Male,16–17,147,147
+New South Wales,NSW,Male,18–24,6651,6651
+New South Wales,NSW,Male,25–34,40411,40411
+New South Wales,NSW,Male,35–44,65028,65028
+New South Wales,NSW,Male,45–54,69130,69130
+New South Wales,NSW,Male,55–64,72859,72859
+New South Wales,NSW,Male,65+,121311,121311
+Victoria,VIC,Female,16–17,372,-372
+Victoria,VIC,Female,18–24,19157,-19157
+Victoria,VIC,Female,25–34,88537,-88537
+Victoria,VIC,Female,35–44,128776,-128776
+Victoria,VIC,Female,45–54,109351,-109351
+Victoria,VIC,Female,55–64,88750,-88750
+Victoria,VIC,Female,65+,121989,-121989
+Victoria,VIC,Male,16–17,119,119
+Victoria,VIC,Male,18–24,6053,6053
+Victoria,VIC,Male,25–34,37816,37816
+Victoria,VIC,Male,35–44,67724,67724
+Victoria,VIC,Male,45–54,62782,62782
+Victoria,VIC,Male,55–64,56815,56815
+Victoria,VIC,Male,65+,89956,89956
+Queensland,QLD,Female,16–17,427,-427
+Queensland,QLD,Female,18–24,16894,-16894
+Queensland,QLD,Female,25–34,75727,-75727
+Queensland,QLD,Female,35–44,107394,-107394
+Queensland,QLD,Female,45–54,99685,-99685
+Queensland,QLD,Female,55–64,84983,-84983
+Queensland,QLD,Female,65+,114285,-114285
+Queensland,QLD,Male,16–17,155,155
+Queensland,QLD,Male,18–24,4929,4929
+Queensland,QLD,Male,25–34,28274,28274
+Queensland,QLD,Male,35–44,49981,49981
+Queensland,QLD,Male,45–54,52753,52753
+Queensland,QLD,Male,55–64,53567,53567
+Queensland,QLD,Male,65+,87067,87067
+South Australia,SA,Female,16–17,2233,-2233
+South Australia,SA,Female,18–24,7359,-7359
+South Australia,SA,Female,25–34,33697,-33697
+South Australia,SA,Female,35–44,42134,-42134
+South Australia,SA,Female,45–54,35487,-35487
+South Australia,SA,Female,55–64,34168,-34168
+South Australia,SA,Female,65+,56897,-56897
+South Australia,SA,Male,16–17,2008,2008
+South Australia,SA,Male,18–24,3239,3239
+South Australia,SA,Male,25–34,18365,18365
+South Australia,SA,Male,35–44,24224,24224
+South Australia,SA,Male,45–54,21600,21600
+South Australia,SA,Male,55–64,23424,23424
+South Australia,SA,Male,65+,44434,44434
+Western Australia,WA,Female,16–17,206,-206
+Western Australia,WA,Female,18–24,7674,-7674
+Western Australia,WA,Female,25–34,36086,-36086
+Western Australia,WA,Female,35–44,63730,-63730
+Western Australia,WA,Female,45–54,55580,-55580
+Western Australia,WA,Female,55–64,47789,-47789
+Western Australia,WA,Female,65+,65483,-65483
+Western Australia,WA,Male,16–17,76,76
+Western Australia,WA,Male,18–24,2191,2191
+Western Australia,WA,Male,25–34,14594,14594
+Western Australia,WA,Male,35–44,33064,33064
+Western Australia,WA,Male,45–54,32739,32739
+Western Australia,WA,Male,55–64,32026,32026
+Western Australia,WA,Male,65+,49639,49639
+Tasmania,TAS,Female,16–17,45,-45
+Tasmania,TAS,Female,18–24,1876,-1876
+Tasmania,TAS,Female,25–34,8623,-8623
+Tasmania,TAS,Female,35–44,12907,-12907
+Tasmania,TAS,Female,45–54,11943,-11943
+Tasmania,TAS,Female,55–64,11429,-11429
+Tasmania,TAS,Female,65+,16563,-16563
+Tasmania,TAS,Male,16–17,13,13
+Tasmania,TAS,Male,18–24,578,578
+Tasmania,TAS,Male,25–34,3159,3159
+Tasmania,TAS,Male,35–44,6022,6022
+Tasmania,TAS,Male,45–54,6087,6087
+Tasmania,TAS,Male,55–64,6713,6713
+Tasmania,TAS,Male,65+,12285,12285
+Northern Territory,NT,Female,16–17,19,-19
+Northern Territory,NT,Female,18–24,477,-477
+Northern Territory,NT,Female,25–34,2735,-2735
+Northern Territory,NT,Female,35–44,3960,-3960
+Northern Territory,NT,Female,45–54,3097,-3097
+Northern Territory,NT,Female,55–64,2420,-2420
+Northern Territory,NT,Female,65+,2039,-2039
+Northern Territory,NT,Male,16–17,6,6
+Northern Territory,NT,Male,18–24,147,147
+Northern Territory,NT,Male,25–34,1004,1004
+Northern Territory,NT,Male,35–44,1834,1834
+Northern Territory,NT,Male,45–54,1728,1728
+Northern Territory,NT,Male,55–64,1601,1601
+Northern Territory,NT,Male,65+,1789,1789
+Australian Capital Territory,ACT,Female,16–17,68,-68
+Australian Capital Territory,ACT,Female,18–24,1994,-1994
+Australian Capital Territory,ACT,Female,25–34,8725,-8725
+Australian Capital Territory,ACT,Female,35–44,11936,-11936
+Australian Capital Territory,ACT,Female,45–54,9768,-9768
+Australian Capital Territory,ACT,Female,55–64,7039,-7039
+Australian Capital Territory,ACT,Female,65+,9209,-9209
+Australian Capital Territory,ACT,Male,16–17,28,28
+Australian Capital Territory,ACT,Male,18–24,791,791
+Australian Capital Territory,ACT,Male,25–34,4341,4341
+Australian Capital Territory,ACT,Male,35–44,7183,7183
+Australian Capital Territory,ACT,Male,45–54,6523,6523
+Australian Capital Territory,ACT,Male,55–64,5251,5251
+Australian Capital Territory,ACT,Male,65+,7026,7026

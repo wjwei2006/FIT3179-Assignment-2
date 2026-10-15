@@ -1,0 +1,119 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": null,
+  "config": {
+    "font": "Inter",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#526673",
+      "titleColor": "#526673",
+      "domainColor": "#D8E3E6",
+      "tickColor": "#D8E3E6",
+      "gridColor": "#E8EFF0",
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "legend": {
+      "labelColor": "#415761",
+      "titleColor": "#415761",
+      "labelFontSize": 11
+    },
+    "title": {
+      "color": "#112F3C",
+      "fontSize": 15
+    },
+    "range": {
+      "category": [
+        "#0B7777",
+        "#E3A35D",
+        "#44648B",
+        "#9D78A1",
+        "#5A9C79",
+        "#D77974",
+        "#8D8C64",
+        "#65A5B5"
+      ]
+    }
+  },
+  "data": {
+    "url": "data/age_share_within_state_aug_2026.csv"
+  },
+  "width": "container",
+  "height": 295,
+  "mark": {
+    "type": "rect",
+    "cornerRadius": 2,
+    "stroke": "white",
+    "strokeWidth": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "age",
+      "type": "ordinal",
+      "sort": [
+        "16–17",
+        "18–24",
+        "25–34",
+        "35–44",
+        "45–54",
+        "55–64",
+        "65+"
+      ],
+      "axis": {
+        "title": "Age group",
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "code",
+      "type": "nominal",
+      "sort": [
+        "NSW",
+        "VIC",
+        "QLD",
+        "SA",
+        "WA",
+        "TAS",
+        "NT",
+        "ACT"
+      ],
+      "axis": {
+        "title": null
+      }
+    },
+    "color": {
+      "field": "share_pct",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "goldgreen"
+      },
+      "legend": {
+        "title": "Share within state (%)"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "state",
+        "type": "nominal",
+        "title": "State / territory"
+      },
+      {
+        "field": "age",
+        "title": "Age"
+      },
+      {
+        "field": "share_pct",
+        "title": "State share",
+        "format": ".1f"
+      },
+      {
+        "field": "count",
+        "type": "quantitative",
+        "title": "Records",
+        "format": ","
+      }
+    ]
+  }
+}

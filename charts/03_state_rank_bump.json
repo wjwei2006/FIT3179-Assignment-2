@@ -1,0 +1,146 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": null,
+  "config": {
+    "font": "Inter",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#526673",
+      "titleColor": "#526673",
+      "domainColor": "#D8E3E6",
+      "tickColor": "#D8E3E6",
+      "gridColor": "#E8EFF0",
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "legend": {
+      "labelColor": "#415761",
+      "titleColor": "#415761",
+      "labelFontSize": 11
+    },
+    "title": {
+      "color": "#112F3C",
+      "fontSize": 15
+    },
+    "range": {
+      "category": [
+        "#0B7777",
+        "#E3A35D",
+        "#44648B",
+        "#9D78A1",
+        "#5A9C79",
+        "#D77974",
+        "#8D8C64",
+        "#65A5B5"
+      ]
+    }
+  },
+  "data": {
+    "url": "data/state_rankings.csv"
+  },
+  "width": "container",
+  "height": 300,
+  "params": [
+    {
+      "name": "highlight",
+      "select": {
+        "type": "point",
+        "fields": [
+          "code"
+        ]
+      },
+      "bind": "legend"
+    }
+  ],
+  "mark": {
+    "type": "line",
+    "point": {
+      "filled": true,
+      "size": 65
+    },
+    "strokeWidth": 2.5
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "axis": {
+        "title": "Year",
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "rank",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          8.3,
+          0.7
+        ]
+      },
+      "axis": {
+        "title": "Rank (1 = most new registrations)",
+        "tickMinStep": 1
+      }
+    },
+    "color": {
+      "field": "code",
+      "type": "nominal",
+      "legend": {
+        "title": "State"
+      },
+      "scale": {
+        "domain": [
+          "NSW",
+          "VIC",
+          "QLD",
+          "SA",
+          "WA",
+          "TAS",
+          "NT",
+          "ACT"
+        ],
+        "range": [
+          "#0b7777",
+          "#3f6f9c",
+          "#d68b58",
+          "#8c71a2",
+          "#bd7462",
+          "#65a18d",
+          "#596b7c",
+          "#9b9f50"
+        ]
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "highlight",
+        "value": 1
+      },
+      "value": 0.17
+    },
+    "tooltip": [
+      {
+        "field": "state",
+        "type": "nominal",
+        "title": "State / territory"
+      },
+      {
+        "field": "year",
+        "title": "Year"
+      },
+      {
+        "field": "new_registrations",
+        "type": "quantitative",
+        "title": "New registrations",
+        "format": ","
+      },
+      {
+        "field": "rank",
+        "title": "State rank"
+      }
+    ]
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": null,
+  "config": {
+    "font": "Inter",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#526673",
+      "titleColor": "#526673",
+      "domainColor": "#D8E3E6",
+      "tickColor": "#D8E3E6",
+      "gridColor": "#E8EFF0",
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "legend": {
+      "labelColor": "#415761",
+      "titleColor": "#415761",
+      "labelFontSize": 11
+    },
+    "title": {
+      "color": "#112F3C",
+      "fontSize": 15
+    },
+    "range": {
+      "category": [
+        "#0B7777",
+        "#E3A35D",
+        "#44648B",
+        "#9D78A1",
+        "#5A9C79",
+        "#D77974",
+        "#8D8C64",
+        "#65A5B5"
+      ]
+    }
+  },
+  "data": {
+    "url": "data/new_registrations_2020_2025.csv"
+  },
+  "width": "container",
+  "height": 300,
+  "transform": [
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "new_registrations",
+          "as": "total"
+        }
+      ],
+      "groupby": [
+        "year"
+      ]
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "opacity": 0.12,
+        "color": "#0B7777"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "axis": {
+            "title": "Year",
+            "labelAngle": 0
+          }
+        },
+        "y": {
+          "field": "total",
+          "type": "quantitative",
+          "axis": {
+            "title": "New registrations"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "point": {
+          "filled": true,
+          "size": 85
+        },
+        "strokeWidth": 3,
+        "color": "#0B7777"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "axis": {
+            "title": "Year",
+            "labelAngle": 0
+          }
+        },
+        "y": {
+          "field": "total",
+          "type": "quantitative",
+          "axis": {
+            "title": "New registrations"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "title": "Year"
+          },
+          {
+            "field": "total",
+            "type": "quantitative",
+            "title": "New registrations",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year == 2021"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "dy": -19,
+        "fontWeight": "bold",
+        "color": "#112F3C",
+        "fontSize": 12
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "total",
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "2021 peak"
+        }
+      }
+    }
+  ]
+}

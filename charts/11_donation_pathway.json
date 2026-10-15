@@ -1,0 +1,127 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": null,
+  "config": {
+    "font": "Inter",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#526673",
+      "titleColor": "#526673",
+      "domainColor": "#D8E3E6",
+      "tickColor": "#D8E3E6",
+      "gridColor": "#E8EFF0",
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "legend": {
+      "labelColor": "#415761",
+      "titleColor": "#415761",
+      "labelFontSize": 11
+    },
+    "title": {
+      "color": "#112F3C",
+      "fontSize": 15
+    },
+    "range": {
+      "category": [
+        "#0B7777",
+        "#E3A35D",
+        "#44648B",
+        "#9D78A1",
+        "#5A9C79",
+        "#D77974",
+        "#8D8C64",
+        "#65A5B5"
+      ]
+    }
+  },
+  "data": {
+    "url": "data/donation_pathway_2025.csv"
+  },
+  "width": "container",
+  "height": 250,
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "cornerRadius": 5,
+        "color": "#0B7777"
+      },
+      "encoding": {
+        "x": {
+          "field": "start",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              1670
+            ]
+          },
+          "axis": null
+        },
+        "x2": {
+          "field": "end"
+        },
+        "y": {
+          "field": "stage",
+          "type": "nominal",
+          "sort": [
+            "1 · Potential donors",
+            "2 · Families approached",
+            "3 · Families consented",
+            "4 · Actual deceased donors"
+          ],
+          "axis": {
+            "title": null
+          }
+        },
+        "tooltip": [
+          {
+            "field": "stage",
+            "title": "Stage"
+          },
+          {
+            "field": "count",
+            "type": "quantitative",
+            "title": "People / families",
+            "format": ","
+          },
+          {
+            "field": "note",
+            "title": "Definition"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "color": "white",
+        "fontWeight": "bold",
+        "fontSize": 12
+      },
+      "encoding": {
+        "x": {
+          "datum": 835
+        },
+        "y": {
+          "field": "stage",
+          "type": "nominal",
+          "sort": [
+            "1 · Potential donors",
+            "2 · Families approached",
+            "3 · Families consented",
+            "4 · Actual deceased donors"
+          ]
+        },
+        "text": {
+          "field": "count",
+          "type": "quantitative",
+          "format": ","
+        }
+      }
+    }
+  ]
+}

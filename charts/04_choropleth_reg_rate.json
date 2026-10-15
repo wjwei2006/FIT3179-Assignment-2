@@ -1,0 +1,104 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": null,
+  "config": {
+    "font": "Inter",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#526673",
+      "titleColor": "#526673",
+      "domainColor": "#D8E3E6",
+      "tickColor": "#D8E3E6",
+      "gridColor": "#E8EFF0",
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "legend": {
+      "labelColor": "#415761",
+      "titleColor": "#415761",
+      "labelFontSize": 11
+    },
+    "title": {
+      "color": "#112F3C",
+      "fontSize": 15
+    },
+    "range": {
+      "category": [
+        "#0B7777",
+        "#E3A35D",
+        "#44648B",
+        "#9D78A1",
+        "#5A9C79",
+        "#D77974",
+        "#8D8C64",
+        "#65A5B5"
+      ]
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.min.geojson",
+    "format": {
+      "type": "json",
+      "property": "features"
+    }
+  },
+  "width": "container",
+  "height": 430,
+  "projection": {
+    "type": "mercator"
+  },
+  "transform": [
+    {
+      "lookup": "properties.STATE_NAME",
+      "from": {
+        "data": {
+          "url": "data/state_2025.csv"
+        },
+        "key": "state",
+        "fields": [
+          "registration_rate_16plus",
+          "new_registrations"
+        ]
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 1.2
+  },
+  "encoding": {
+    "color": {
+      "field": "registration_rate_16plus",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "tealblues",
+        "domain": [
+          0,
+          80
+        ]
+      },
+      "legend": {
+        "title": "Registered (% age 16+)"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.STATE_NAME",
+        "title": "State / territory"
+      },
+      {
+        "field": "registration_rate_16plus",
+        "title": "Registered, % age 16+"
+      },
+      {
+        "field": "new_registrations",
+        "type": "quantitative",
+        "title": "New registrations 2025",
+        "format": ","
+      }
+    ]
+  }
+}

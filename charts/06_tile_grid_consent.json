@@ -1,0 +1,131 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": null,
+  "config": {
+    "font": "Inter",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#526673",
+      "titleColor": "#526673",
+      "domainColor": "#D8E3E6",
+      "tickColor": "#D8E3E6",
+      "gridColor": "#E8EFF0",
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "legend": {
+      "labelColor": "#415761",
+      "titleColor": "#415761",
+      "labelFontSize": 11
+    },
+    "title": {
+      "color": "#112F3C",
+      "fontSize": 15
+    },
+    "range": {
+      "category": [
+        "#0B7777",
+        "#E3A35D",
+        "#44648B",
+        "#9D78A1",
+        "#5A9C79",
+        "#D77974",
+        "#8D8C64",
+        "#65A5B5"
+      ]
+    }
+  },
+  "data": {
+    "url": "data/state_2025.csv"
+  },
+  "width": "container",
+  "height": 360,
+  "layer": [
+    {
+      "mark": {
+        "type": "square",
+        "size": 4900,
+        "stroke": "#ffffff",
+        "strokeWidth": 4
+      },
+      "encoding": {
+        "x": {
+          "field": "tile_x",
+          "type": "ordinal",
+          "axis": null,
+          "scale": {
+            "padding": 0.35
+          }
+        },
+        "y": {
+          "field": "tile_y",
+          "type": "ordinal",
+          "axis": null,
+          "scale": {
+            "padding": 0.3
+          }
+        },
+        "color": {
+          "field": "family_consent_rate",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              40,
+              80
+            ],
+            "scheme": "tealblues"
+          },
+          "legend": {
+            "title": "Family consent rate (%)"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State / territory"
+          },
+          {
+            "field": "family_consent_rate",
+            "type": "quantitative",
+            "title": "Consent (%)"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 15,
+        "fontWeight": "bold",
+        "color": "#0e3037"
+      },
+      "encoding": {
+        "x": {
+          "field": "tile_x",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "tile_y",
+          "type": "ordinal"
+        },
+        "text": {
+          "field": "code"
+        },
+        "tooltip": [
+          {
+            "field": "state",
+            "type": "nominal",
+            "title": "State / territory"
+          },
+          {
+            "field": "family_consent_rate",
+            "title": "Consent (%)"
+          }
+        ]
+      }
+    }
+  ]
+}

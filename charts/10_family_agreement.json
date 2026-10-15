@@ -1,0 +1,139 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": null,
+  "config": {
+    "font": "Inter",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelColor": "#526673",
+      "titleColor": "#526673",
+      "domainColor": "#D8E3E6",
+      "tickColor": "#D8E3E6",
+      "gridColor": "#E8EFF0",
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "legend": {
+      "labelColor": "#415761",
+      "titleColor": "#415761",
+      "labelFontSize": 11
+    },
+    "title": {
+      "color": "#112F3C",
+      "fontSize": 15
+    },
+    "range": {
+      "category": [
+        "#0B7777",
+        "#E3A35D",
+        "#44648B",
+        "#9D78A1",
+        "#5A9C79",
+        "#D77974",
+        "#8D8C64",
+        "#65A5B5"
+      ]
+    }
+  },
+  "data": {
+    "url": "data/family_agreement_context_2025.csv"
+  },
+  "width": "container",
+  "height": 190,
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "cornerRadiusEnd": 5,
+        "height": 16,
+        "color": "#DCE9E8"
+      },
+      "encoding": {
+        "x": {
+          "datum": 100,
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              100
+            ]
+          },
+          "axis": {
+            "title": "Families agreeing (%)"
+          }
+        },
+        "y": {
+          "field": "group",
+          "type": "nominal",
+          "sort": [
+            "Registered on AODR",
+            "Family knew wishes",
+            "Neither registered nor wishes known"
+          ],
+          "axis": {
+            "title": null
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "bar",
+        "cornerRadiusEnd": 5,
+        "height": 16,
+        "color": "#0B7777"
+      },
+      "encoding": {
+        "x": {
+          "field": "rate",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "group",
+          "type": "nominal",
+          "sort": [
+            "Registered on AODR",
+            "Family knew wishes",
+            "Neither registered nor wishes known"
+          ]
+        },
+        "tooltip": [
+          {
+            "field": "group",
+            "title": "Context"
+          },
+          {
+            "field": "rate",
+            "title": "Consent (%)"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": 8,
+        "fontWeight": "bold",
+        "align": "left",
+        "fontSize": 12
+      },
+      "encoding": {
+        "x": {
+          "field": "rate",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "group",
+          "type": "nominal"
+        },
+        "text": {
+          "field": "rate",
+          "type": "quantitative",
+          "format": ".0f"
+        }
+      }
+    }
+  ]
+}
