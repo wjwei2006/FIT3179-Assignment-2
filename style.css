@@ -141,3 +141,20 @@ main { max-width:var(--reading-width); padding:0 var(--page-edge); }
   #chart-5, #chart-6 {min-height:310px;}
 }
 
+.sources--simple{padding:70px 0 85px}
+.sources--simple .eyebrow{display:block;margin-bottom:10px;color:#d17e51}
+.sources-simple-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:34px;align-items:start;margin-top:10px}
+.sources-intro h2{font:normal clamp(40px,5vw,64px)/1.05 "DM Serif Display",serif;margin:10px 0 22px;color:#173642}
+.sources-intro p,.sources--simple p,.sources--simple li{font-size:16px;line-height:1.8;color:#5a7178}
+.sources--simple h3{font-size:13px;letter-spacing:2.2px;color:#173642;margin:6px 0 22px}
+.source-links{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:18px}
+.source-links a{font-size:16px;color:#173642;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+.source-links a:hover{color:#0b7777}
+.sources-footnote{margin:52px 0 34px;padding-top:24px;border-top:1px solid #d8e2e5;font-size:14px;color:#6b8088}
+.sources-meta{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;padding-top:22px;border-top:1px solid #d8e2e5;font-size:12px;letter-spacing:2px;color:#7a8d95;text-transform:uppercase}
+.sources-meta div:nth-child(2){text-align:center}
+.sources-meta div:nth-child(3){text-align:right}
+.minimal-footer{padding:0 24px 32px;max-width:1480px;margin:0 auto;background:transparent;color:#7a8d95;display:flex;justify-content:flex-end;font-size:12px;letter-spacing:1px}
+.minimal-footer a{color:#a46c45;font-weight:700}
+@media(max-width:1100px){.sources-simple-grid{grid-template-columns:1fr 1fr}.sources-intro{grid-column:1/-1}.sources-meta{grid-template-columns:1fr;gap:8px}.sources-meta div:nth-child(2),.sources-meta div:nth-child(3){text-align:left}}
+@media(max-width:650px){.sources--simple{padding:55px 0 60px}.sources-simple-grid{grid-template-columns:1fr;gap:20px}.sources-intro h2{font-size:48px}.source-links{gap:12px}.source-links a,.sources--simple p,.sources--simple li{font-size:15px}.sources-footnote{margin:32px 0 22px}.minimal-footer{padding:0 16px 26px}}
